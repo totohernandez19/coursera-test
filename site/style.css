@@ -10,54 +10,54 @@
 }
 
 .left_panel{
-    background: burlywood;    
-    position: relative;
-    left: 5px;
-    top : 0px;
-  }
+  background: burlywood;    
+  position: relative;
+  left: 5px;
+  top : 0px;
+}
 
-  .size_sidepanel{
-    width: 300px;
-    height: 580px;
-  }
+.size_sidepanel{
+  width: 300px;
+  height: 580px;
+}
 
-  .topcenter_panel{
-    background: skyblue;
-    width: 700px;
-    height: 100px;
-    position: absolute;
-    left: 325px;
-    top : 0px;
-  }
+.topcenter_panel{
+  background: skyblue;
+  width: 715px;
+  height: 100px;
+  position: absolute;
+  left: 325px;
+  top : 0px;
+}
 
-  .center_panel{
-    background: springgreen;
-    width: 700px;
-    height: 470px;
-    position: absolute;
-    left: 325px;
-    top : 110px;
-  }
+.center_panel{
+  background: springgreen;
+  width: 715px;
+  height: 470px;
+  position: absolute;
+  left: 325px;
+  top : 110px;
+}
 
-  .right_panel{
-    background: hotpink;
-    position: absolute;
-    left: 1035px;
-    top : 0px;
-  }  
+.right_panel{
+  background: hotpink;
+  position: absolute;
+  left: 1050px;
+  top : 0px;
+}  
 
-  .topcenter_h1{
-    color: white;
-    position: absolute;
-    left: 450px;
-    top : 20px;
-  }
+.topcenter_h1{
+  color: white;
+  position: absolute;
+  left: 450px;
+  top : 20px;
+}
 
-  .footer{
-    background: yellow;
-    width: auto;
-    height: 25px;
-    position: relative;
-    bottom: 5px;
-    text-align: center;
-  }
+.footer{
+  background: yellow;
+  width: auto;
+  height: 25px;
+  position: relative;
+  bottom: 5px;
+  text-align: center;
+}
