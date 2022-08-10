@@ -1,12 +1,8 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: "Courier New", sans-serif;
-    color: #50493E;
-    text-align: center;
+
+body{
+  background: black;
+  color: #50493E;
+  text-align: center;
 }
 
 #center_font_style{
@@ -64,8 +60,11 @@ h5 {
 }
 
 .topcenter_h1{
+  text-align: center;
+  width: 715px;
+  height: 100px;
   position: absolute;
-  left: 450px;
+  left: 325px;
   top : 20px;
 }
 
@@ -77,4 +76,5 @@ h5 {
   left: 5px;
   bottom: 5px;
   text-align: center;
+  text
 }
