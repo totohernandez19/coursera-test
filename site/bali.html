@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML / CSS CLASS</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -21,10 +21,94 @@
   </p>
 
   <!-- MAIN CENTER PANEL -->
-  <p class="center_panel" id="center_font_style"></p>
+  <p class="center_panel" id="center_font_style">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 5</div>
+		  <img src="pics/bali/bali_1.jpg" style="width:100%; height: 100%;">
+		  <div class="text">Uluwatu Temple</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 5</div>
+		  <img src="pics/bali/bali_2.jpg" style="width:100%; height: 100%;">
+		  <div class="text">Uluwatu Temple</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 5</div>
+		  <img src="pics/bali/bali_3.jpg" style="width:100%; height: 100%;">
+		  <div class="text">Uluwatu Temple</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 5</div>
+		  <img src="pics/bali/bali_4.jpg" style="width:100%; height: 100%;">
+		  <div class="text">Tana Lot Temple</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 5</div>
+		  <img src="pics/bali/bali_5.jpg" style="width:100%; height: 100%;">
+		  <div class="text">Tana Lot Temple</div>
+		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext">6 / 5</div>
+		  <img src="pics/bali/bali_6.jpg" style="width:100%; height: 100%;">
+		  <div class="text">Tana Lot Temple</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">7 / 5</div>
+		  <img src="pics/bali/bali_7.jpg" style="width:100%; height: 100%;">
+		  <div class="text">Tana Lot Temple</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">8 / 5</div>
+		  <img src="pics/bali/bali_8.jpg" style="width:100%; height: 80%;">
+		  <div class="text">Tana Lot Temple</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+	</div>
+	<br>	
+  </p>
 
   <!-- LEFT SIDE BAR MENU -->
-  <p class="right_panel"></p>  
+  <p class="right_panel"></p> 
+
+
+  <script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+  </script>
+
 </body>
 
 <footer class="footer">Maybelle Hernandez 2022 &copy; Copyright</footer>

@@ -79,6 +79,11 @@ body{
   text
 }
 
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
 /* Slideshow container */
 .slideshow-container {
   width: 700px;
@@ -127,7 +132,7 @@ body{
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 8px;
   width: 100%;
   text-align: center;
 }
