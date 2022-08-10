@@ -1,3 +1,14 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif
+    color: #50493E;
+    text-align: center;
+}
+
 #center_font_style{
   font-family: Courier New;
   font-style: italic;
@@ -10,27 +21,33 @@
 }
 
 #left_panel_text{
-  text-align: left;
-  position: fixed;
-  top: 0;
-  left: 0;
+  text-align: left;  
+  position: absolute;
+  left: 5px;
+  top : 0px;
   width: 300px;
 }
 
 .left_panel{
-  background: burlywood;    
-  position: relative;
+  background: #FCFBFA;    
+  position: absolute;
   left: 5px;
   top : 0px;
-}
-
-.size_sidepanel{
   width: 300px;
   height: 580px;
 }
 
+.right_panel{
+  background: #FCFBFA;
+  position: absolute;
+  left: 1050px;
+  top : 0px;
+  width: 300px;
+  height: 580px;
+} 
+
 .topcenter_panel{
-  background: skyblue;
+  background: #FCFBFA;
   width: 715px;
   height: 100px;
   position: absolute;
@@ -39,7 +56,7 @@
 }
 
 .center_panel{
-  background: springgreen;
+  background: #FCFBFA;
   width: 715px;
   height: 470px;
   position: absolute;
@@ -47,25 +64,17 @@
   top : 110px;
 }
 
-.right_panel{
-  background: hotpink;
-  position: absolute;
-  left: 1050px;
-  top : 0px;
-}  
-
 .topcenter_h1{
-  color: white;
   position: absolute;
   left: 450px;
   top : 20px;
 }
 
 .footer{
-  background: yellow;
+  background: #FCFBFA;
   width: auto;
   height: 25px;
-  position: relative;
+  position: absolute;
   bottom: 5px;
   text-align: center;
 }
