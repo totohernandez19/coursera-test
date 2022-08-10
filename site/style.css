@@ -4,7 +4,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "Raleway", sans-serif
+    font-family: "Courier New", sans-serif;
     color: #50493E;
     text-align: center;
 }
@@ -22,28 +22,27 @@ h5 {
 
 #left_panel_text{
   text-align: left;  
-  position: absolute;
+  position: relative;
   left: 5px;
-  top : 0px;
-  width: 300px;
+  top : 5px;
 }
 
 .left_panel{
-  background: #FCFBFA;    
-  position: absolute;
+  background: #FCFBFA; 
+  width: 300px;
+  height: 580px;   
+  position: relative;
   left: 5px;
   top : 0px;
-  width: 300px;
-  height: 580px;
 }
 
 .right_panel{
   background: #FCFBFA;
+  width: 300px;
+  height: 580px;
   position: absolute;
   left: 1050px;
   top : 0px;
-  width: 300px;
-  height: 580px;
 } 
 
 .topcenter_panel{
@@ -72,9 +71,10 @@ h5 {
 
 .footer{
   background: #FCFBFA;
-  width: auto;
+  width: 1335px;
   height: 25px;
-  position: absolute;
+  position: relative;
+  left: 5px;
   bottom: 5px;
   text-align: center;
 }
