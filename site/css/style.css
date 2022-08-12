@@ -25,27 +25,27 @@ ul{
   list-style-type: none;
 }
 
-#center_text{
+.center_text{
   font-style: italic;
   font-size: medium;
   padding: 20px;
 }
 
-#topcenter_text{
+.topcenter_text{
   font-weight: bold;
 }
 
-#left_panel_text{
+.left_panel_text{
   text-align: left; 
   padding: 50px; 
 }
 
-#right_panel_text{
+.right_panel_text{
   text-align: justify; 
   padding: 15px; 
 }
 
-.left_panel{
+#left_panel{
   background: #FCFBFA; 
   width: 300px;
   height: 580px; 
@@ -55,7 +55,7 @@ ul{
   top : 15px;  
 }
 
-.right_panel{
+#right_panel{
   overflow: scroll;
   background: #FCFBFA;
   width: 300px;
@@ -66,7 +66,7 @@ ul{
   top : 0px;
 } 
 
-.topcenter_panel{
+#topcenter_panel{
   background: #FCFBFA;
   width: 720px;
   height: 100px;
@@ -76,7 +76,7 @@ ul{
   top : 0px;
 }
 
-.center_panel{
+#center_panel{
   background: #FCFBFA;
   width: 720px;
   height: 470px;
@@ -95,7 +95,7 @@ ul{
   top : 20px;
 }
 
-.footer{
+#footer{
   background: #FCFBFA;
   width: 1340px;
   height: 25px;
@@ -105,6 +105,8 @@ ul{
   left: 15px;
   bottom: 15px;
   text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-variant-caps: all-petite-caps;
 }
 
 /* Slideshow container */
