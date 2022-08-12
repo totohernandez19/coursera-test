@@ -104,11 +104,11 @@ ul{
 
 /* Slideshow container */
 .slideshow-container {
-  width: 700px;
+  width: 710px;
   height: 450px;
   position: absolute;
   left: 330px;
-  top : 140px;
+  top : 130px;
 }
 
 /* Next & previous buttons */
