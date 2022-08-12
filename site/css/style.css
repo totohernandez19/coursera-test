@@ -41,6 +41,11 @@ ul{
   padding: 50px; 
 }
 
+#right_panel_text{
+  text-align: justify; 
+  padding: 10px; 
+}
+
 .left_panel{
   background: #FCFBFA; 
   width: 300px;
@@ -52,6 +57,7 @@ ul{
 }
 
 .right_panel{
+  overflow: scroll;
   background: #FCFBFA;
   width: 300px;
   height: 580px;
