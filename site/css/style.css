@@ -3,7 +3,8 @@ body{
   background: #371E05;
   color: #50493E;
   text-align: center;
-  font-family: Verdana, sans-serif; margin:0
+  font-family: Arial, Helvetica, sans-serif; 
+  margin:0;
 }
 
 * {
@@ -25,14 +26,12 @@ ul{
 }
 
 #center_text{
-  font-family: Courier New;
   font-style: italic;
   font-size: medium;
   padding: 20px;
 }
 
 #topcenter_text{
-  font-family: Copperplate;
   font-weight: bold;
 }
 
@@ -43,7 +42,7 @@ ul{
 
 #right_panel_text{
   text-align: justify; 
-  padding: 10px; 
+  padding: 15px; 
 }
 
 .left_panel{
@@ -200,4 +199,25 @@ ul{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+/* For Images */
+.parent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;    
+  width: 720px;
+  height: 470px;  
+  position: absolute;
+  left: 325px;
+  top : 125px;
+  z-index: 100;
+}
+.child{
+  flex-basis: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.child img{
+  width: 100%;
 }
