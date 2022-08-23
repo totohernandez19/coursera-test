@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
+	<title>BELMONT JOB ORDERS</title>
+</head>
+<body>
+<!-- LEFT SIDE BAR MENU -->
+  <nav id="left_panel">
+  	<ul class="left_panel_text"> OUR ADVENTURES
+  		<li> --------------------- </li>
+  		<li><a href="index.html"> HOME </a></li>
+  		<li><a href="yogya.html"> YOGYAKARTA </a></li>
+  		<li><a href="bali.html"> BALI </a></li>
+  		<li><a href="negros.html"> NEGROS </a></li>
+  		<li><a href="cebu.html"> CEBU </a></li>
+  		<li><br></li>
+  		<li><br></li>
+  		<li><br></li>
+  		<li> TITO'S JOB </li>
+  		<li> --------------------- </li>
+  		<li><a href="https://www.belmontmanagementgroup.com/" target="_blank"> BELMONT </a></li>
+  		<li><a href="joborder.html"> JOB ORDER </a></li>
+  	</ul>
+  </nav>
+
+  <!-- TOP CENTER -->
+  <p id="topcenter_panel">
+    <h1 class="topcenter_h1"> JOB ORDER </h1>
+  </p>
+
+  <!-- MAIN CENTER PANEL -->
+
+  <p id="center_panel">
+    <table cellpadding="3" cellspacing="2">
+        <th class="row1">Job Order Numer</th>
+        <tr>
+            <td class="col1">Tenant Name</td>
+            <td class="col2"><input type="text" name="Tenant Name" id="TName" placeholder="Tenant Name"></td>
+            <td class="col3"></td>
+            <td class="col4"></td>
+        </tr>
+        <tr>
+            <td class="col1">Address</td>
+            <td class="col2"><input type="text" name="Tenant Address" id="Address" placeholder="Tenant Address"></td>
+            <td class="col3"></td>
+            <td class="col4"></td>
+        </tr>
+        <th class="row1">Date</th>
+        <tr>
+            <td class="col1">Assigned Date</td>
+            <td class="col2"><input type="date" name="Start Date" id="SDate" class="startDate"></td>
+        </tr>
+        <tr>
+            <td class="col1">Finished Date</td>
+            <td class="col2"><input type="date" name="End date" id="EDate" class="endDate"></td>
+        </tr>
+        <th class="row1">Empty Apartment</th>
+        <tr>
+            <td class="col1">Empty Apartment</td>
+            <td class="col2">
+                <input type="radio" name="empty" id="yesEmpty" value="yes"> Yes
+                <input type="radio" name="empty" id="noEmpty" value="no"> No
+            </td>
+        </tr>
+        <th class="row1">Priority</th>
+        <tr>
+            <td class="col1">Priority</td>
+            <td class="col2">
+                <input type="radio" name="priority" id="highPrio" value="High"> High
+                <input type="radio" name="priority" id="avePrio" value="Average"> Average
+                <input type="radio" name="priority" id="lowPrio" value="Low"> Low
+            </td>
+        </tr>
+        <th class="row1">Description</th>
+        <tr>
+            <td class="col1">Description</td>
+            <td class="col2"><textarea name="description" id="description" cols="50" rows="3"></textarea></td>
+        </tr>
+        <tr colspan="4" align="center">
+            <td><button type="submit" class="submit1"  onclick="submitProjectDetails()">Submit</button></td>            
+            <td><button type="reset" class="reset1" onclick="resetProjectDetails()">Clear</button></td>
+        </tr>
+    </table>
+  </p>
+
+
+  <!-- LEFT SIDE BAR MENU -->
+  <p id="right_panel" class="right_panel_text">
+  	BELMONT
+  	<br><br>
+  	Our business strives to uphold great communication with our tenants, owners, and prospects. 
+  	<br><br>
+  	Belmont Management Group <br>
+	1133 Louisiana Avenue, <br>
+	Suite 101, Winter Park, <br>
+	FL 32789 <br><br>
+	Phone: (407) 745-0696 <br>
+	Fax: (407)-982-7093 <br>
+	Email Us <br><br>
+
+	For Immediate Assistance <br>
+	Please Contact: <br>
+	Raul Veitia 321-274-2422 <br>
+  </p>  
+
+  <script>
+	function submitProjectDetails() {
+	    var TenantName = document.getElementById("TName");
+	    var Address = document.getElementById("Address");
+	    var sDate = document.getElementById("SDate");
+	    var eDate = document.getElementById("EDate");
+	    var Prior = document.querySelector('input[name="priority"]');
+	    var Empty = document.querySelector('input[name="empty"]');
+	    var Description = document.getElementById("description");
+	 	// project name validation
+	    if (TenantName.value == "") {
+	        alert("Project name field cannot be empty");
+	    } else {
+	        alert(TenantName.value);
+	    }
+	    // Assigned to validation
+	    var person = pAssigned.options[pAssigned.selectedIndex].value;
+	    if (person == "" || person=="Select") {
+	        alert("Project Assigned to field cannot be empty");
+	    } else {
+	        alert(pAssigned.options[pAssigned.selectedIndex].value);
+	    }
+	    // Date validation
+	    // start date
+	    if (sDate.value == "") {
+	        alert(" Please Enter the Starting date");
+	    } else {
+	        alert(document.getElementById("SDate").value);
+	    }
+	    // End date
+	    if (eDate.value == 0) {
+	        alert("Please enter the end date ");
+	    } else {
+	        alert(document.getElementById("EDate").value);
+	    }
+	   //priority validation
+	    var Prior = document.querySelector('input[name="priority"]:checked');
+
+	    if (Prior != null) {
+	        alert("The priority of project is:" + Prior.value);
+
+	    } else {
+	        alert("You did not select the priority of the project");
+	    }
+
+	    //empty validation
+	    var Empty = document.querySelector('input[name="empty"]:checked');
+
+	    if (Empty != null) {
+	        alert("Empty apartment selection is:" + Empty.value);
+
+	    } else {
+	        alert("You did not select the empty apartment selection");
+	    }
+
+	    // description validation
+
+	    if (Description.value == "") {
+	        alert("You did not write the project description");
+	    } else {
+	        alert(document.getElementById("description").value);
+	    }
+	}
+	function resetProjectDetails() {
+	     document.getElementById("TName").value = '';
+	     document.getElementById("Address").value = '';
+	     document.getElementById("SDate").value = '';
+	     document.getElementById("EDate").value = '';
+	     document.getElementById("description").value = '';
+	     document.querySelector('input[name="empty"]').value = "";
+	     document.querySelector('input[name="priority"]').value = "";
+
+	     document.getElementById("highPrio").checked = false;
+	     document.getElementById("avePrio").checked = false;
+	     document.getElementById("lowPrio").checked = false;
+	     document.getElementById("yesEmpty").checked = false;
+	     document.getElementById("noEmpty").checked = false;
+	}
+  </script>
+
+</body>
+<footer id="footer">Maybelle Hernandez 2022 &copy; Copyright</footer>
+</html>

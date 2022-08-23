@@ -16,7 +16,13 @@
   		<li><a href="bali.html"> BALI </a></li>
   		<li><a href="negros.html"> NEGROS </a></li>
   		<li><a href="cebu.html"> CEBU </a></li>
-  		<li><a href="index.html"> FLORIDA </a></li>
+  		<li><br></li>
+  		<li><br></li>
+  		<li><br></li>
+  		<li> TITO'S JOB </li>
+  		<li> --------------------- </li>
+  		<li><a href="https://www.belmontmanagementgroup.com/" target="_blank"> BELMONT </a></li>
+  		<li><a href="joborder.html"> JOB ORDER </a></li>
   	</ul>
   </nav>
 
@@ -32,63 +38,28 @@
 
 			<div class="mySlides fade">
 			  <div class="numbertext">1 / 10</div>
-			  <img src="pics/yogya/yog_1.jpg">
+			  <img src="pics/jak/jak_1.jpg">
 			  <div class="text">Sewu Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">2 / 10</div>
-			  <img src="pics/yogya/yog_2.jpg">
+			  <img src="pics/jak/jak_2.jpg">
 			  <div class="text">Sewu Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">3 / 10</div>
-			  <img src="pics/yogya/yog_3.jpg">
+			  <img src="pics/jak/jak_3.jpg">
 			  <div class="text">Sewu Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">4 / 10</div>
-			  <img src="pics/yogya/yog_4.jpg">
+			  <img src="pics/jak/jak_4.jpg">
 			  <div class="text">Sewu Temple</div>
 			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">5 / 10</div>
-			  <img src="pics/yogya/yog_5.jpg">
-			  <div class="text">Sewu Temple</div>
-			</div>
-			<div class="mySlides fade">
-			  <div class="numbertext">6 / 10</div>
-			  <img src="pics/yogya/yog_6.jpg">
-			  <div class="text">Borobudur Temple</div>
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">7 / 10</div>
-			  <img src="pics/yogya/yog_7.jpg">
-			  <div class="text">Borobudur Temple</div>
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">8 / 10</div>
-			  <img src="pics/yogya/yog_8.jpg">
-			  <div class="text">Borobudur Temple</div>
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">9 / 10</div>
-			  <img src="pics/yogya/yog_9.jpg">
-			  <div class="text">Borobudur Temple</div>
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">10 / 10</div>
-			  <img src="pics/yogya/yog_10.jpg">
-			  <div class="text">Borobudur Temple</div>
-			</div>
-
+			
 			<a class="prev" onclick="plusSlides(-1)">❮</a>
 			<a class="next" onclick="plusSlides(1)">❯</a>
 			
@@ -121,32 +92,32 @@
 
 
   <script>
-	let slideIndex = 1;
-	showSlides(slideIndex);
+		let slideIndex = 1;
+		showSlides(slideIndex);
 
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
 
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
 
-	function showSlides(n) {
-	  let i;
-	  let slides = document.getElementsByClassName("mySlides");
-	  let dots = document.getElementsByClassName("dot");
-	  if (n > slides.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-	    slides[i].style.display = "none";  
-	  }
-	  for (i = 0; i < dots.length; i++) {
-	    dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	}
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
   </script>
 
 </body>
