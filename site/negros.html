@@ -37,60 +37,50 @@
 			<div class="mySlides fade">
 			  <div class="numbertext">1 / 10</div>
 			  <img src="pics/neg/neg_1.jpg">
-			  <div class="text">Sewu Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">2 / 10</div>
 			  <img src="pics/neg/neg_2.jpg">
-			  <div class="text">Sewu Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">3 / 10</div>
 			  <img src="pics/neg/neg_3.jpg">
-			  <div class="text">Sewu Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">4 / 10</div>
 			  <img src="pics/neg/neg_4.jpg">
-			  <div class="text">Sewu Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">5 / 10</div>
 			  <img src="pics/neg/neg_5.jpg">
-			  <div class="text">Sewu Temple</div>
 			</div>
 			<div class="mySlides fade">
 			  <div class="numbertext">6 / 10</div>
 			  <img src="pics/neg/neg_6.jpg">
-			  <div class="text">Borobudur Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">7 / 10</div>
 			  <img src="pics/neg/neg_7.jpg">
-			  <div class="text">Borobudur Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">8 / 10</div>
 			  <img src="pics/neg/neg_8.jpg">
-			  <div class="text">Borobudur Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">9 / 10</div>
 			  <img src="pics/neg/neg_9.jpg">
-			  <div class="text">Borobudur Temple</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <div class="numbertext">10 / 10</div>
 			  <img src="pics/neg/neg_10.jpg">
-			  <div class="text">Borobudur Temple</div>
 			</div>
 
 			<a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -138,17 +128,12 @@
 		function showSlides(n) {
 		  let i;
 		  let slides = document.getElementsByClassName("mySlides");
-		  let dots = document.getElementsByClassName("dot");
 		  if (n > slides.length) {slideIndex = 1}    
 		  if (n < 1) {slideIndex = slides.length}
 		  for (i = 0; i < slides.length; i++) {
 		    slides[i].style.display = "none";  
 		  }
-		  for (i = 0; i < dots.length; i++) {
-		    dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";  
-		  dots[slideIndex-1].className += " active";
+		  slides[slideIndex-1].style.display = "block";
 		}
   </script>
 
