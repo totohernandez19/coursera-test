@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<!--link rel="stylesheet" type="text/css" href="css/bootstrap.css" /-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
 	<title>BELMONT JOB ORDERS</title>
@@ -33,100 +33,44 @@
     <h1 class="topcenter_h1"> JOB ORDER </h1>
   </p>
 
-  <!-- MAIN CENTER PANEL 
+<!-- MAIN CENTER PANEL -->
 
-  <p id="center_panel">
-    <table cellpadding="3" cellspacing="2">
-        <th class="row1">Job Order Numer</th>
-        <tr>
-            <td class="col1">Tenant Name</td>
-            <td class="col2"><input type="text" name="Tenant Name" id="TName" placeholder="Tenant Name"></td>
-            <td class="col3"></td>
-            <td class="col4"></td>
-        </tr>
-        <tr>
-            <td class="col1">Address</td>
-            <td class="col2"><input type="text" name="Tenant Address" id="Address" placeholder="Tenant Address"></td>
-            <td class="col3"></td>
-            <td class="col4"></td>
-        </tr>
-        <th class="row1">Date</th>
-        <tr>
-            <td class="col1">Assigned Date</td>
-            <td class="col2"><input type="date" name="Start Date" id="SDate" class="startDate"></td>
-        </tr>
-        <tr>
-            <td class="col1">Finished Date</td>
-            <td class="col2"><input type="date" name="End date" id="EDate" class="endDate"></td>
-        </tr>
-        <th class="row1">Empty Apartment</th>
-        <tr>
-            <td class="col1">Empty Apartment</td>
-            <td class="col2">
-                <input type="radio" name="empty" id="yesEmpty" value="yes"> Yes
-                <input type="radio" name="empty" id="noEmpty" value="no"> No
-            </td>
-        </tr>
-        <th class="row1">Priority</th>
-        <tr>
-            <td class="col1">Priority</td>
-            <td class="col2">
-                <input type="radio" name="priority" id="highPrio" value="High"> High
-                <input type="radio" name="priority" id="avePrio" value="Average"> Average
-                <input type="radio" name="priority" id="lowPrio" value="Low"> Low
-            </td>
-        </tr>
-        <th class="row1">Description</th>
-        <tr>
-            <td class="col1">Description</td>
-            <td class="col2"><textarea name="description" id="description" cols="50" rows="3"></textarea></td>
-        </tr>
-        <tr colspan="4" align="center">
-            <td><button type="submit" class="submit1"  onclick="submitProjectDetails()">Submit</button></td>            
-            <td><button type="reset" class="reset1" onclick="resetProjectDetails()">Clear</button></td>
-        </tr>
-    </table>
-  </p>
-  -->
-
-	<div id = "center_panel">
-        <form action="connect.php" method="post">
-          <div>
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" name="firstName"/>
-          </div>
-          <div>
-            <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" name="lastName"/>
-          </div>
-          <div>
-            <label for="gender">Gender</label>
-            <div>
-              <label for="male" class="radio-inline">
-              	<input type="radio" name="gender" value="m" id="male"/>Male</label>
-              <label for="female" class="radio-inline">
-              	<input type="radio" name="gender" value="f" id="female"/>Female</label>
-              <label for="others" class="radio-inline">
-              	<input type="radio" name="gender" value="o" id="others"/>Others</label>
-            </div>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" name="email"/>
-          </div>
-          <div>
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password"/>
-          </div>
-          <div>
-            <label for="number">Phone Number</label>
-            <input type="number" class="form-control" id="number" name="number"/>
-          </div>
-          <input type="submit" class="btn btn-primary"/>
-        </form>
-    </div> 
-  
-
+<div id = "center_panel">
+    <form action="php/connect.php" method="post">
+      <div>
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName"/>
+      </div>
+      <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName"/>
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <div>
+          <label for="male" class="radio-inline">
+          	<input type="radio" name="gender" value="m" id="male"/>Male</label>
+          <label for="female" class="radio-inline">
+          	<input type="radio" name="gender" value="f" id="female"/>Female</label>
+          <label for="others" class="radio-inline">
+          	<input type="radio" name="gender" value="o" id="others"/>Others</label>
+        </div>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" name="email"/>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password"/>
+      </div>
+      <div>
+        <label for="number">Phone Number</label>
+        <input type="number" class="form-control" id="number" name="number"/>
+      </div>
+      <input type="submit" class="btn btn-primary"/>
+    </form>
+</div> 
 
   <!-- LEFT SIDE BAR MENU -->
   <p id="right_panel" class="right_panel_text">
