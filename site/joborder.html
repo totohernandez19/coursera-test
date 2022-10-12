@@ -35,41 +35,29 @@
 
 <!-- MAIN CENTER PANEL -->
 
-<div id = "center_panel">
-    <form action="php/connect.php" method="post">
-      <div>
-        <label for="firstName">First Name</label>
-        <input type="text" class="form-control" id="firstName" name="firstName"/>
-      </div>
-      <div>
-        <label for="lastName">Last Name</label>
-        <input type="text" class="form-control" id="lastName" name="lastName"/>
-      </div>
-      <div>
-        <label for="gender">Gender</label>
-        <div>
-          <label for="male" class="radio-inline">
-          	<input type="radio" name="gender" value="m" id="male"/>Male</label>
-          <label for="female" class="radio-inline">
-          	<input type="radio" name="gender" value="f" id="female"/>Female</label>
-          <label for="others" class="radio-inline">
-          	<input type="radio" name="gender" value="o" id="others"/>Others</label>
-        </div>
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="text" class="form-control" id="email" name="email"/>
-      </div>
-      <div>
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" name="password"/>
-      </div>
-      <div>
-        <label for="number">Phone Number</label>
-        <input type="number" class="form-control" id="number" name="number"/>
-      </div>
-      <input type="submit" class="btn btn-primary"/>
-    </form>
+<div id = "center_panel">    
+    <form name="frmContact" method="post" action="php/connect.php">
+		<p>
+		<label for="Name">Name </label>
+		<input type="text" name="txtName" id="txtName">
+		</p>
+		<p>
+		<label for="email">Email</label>
+		<input type="text" name="txtEmail" id="txtEmail">
+		</p>
+		<p>
+		<label for="phone">Phone</label>
+		<input type="text" name="txtPhone" id="txtPhone">
+		</p>
+		<p>
+		<label for="message">Message</label>
+		<textarea name="txtMessage" id="txtMessage"></textarea>
+		</p>
+		<p>&nbsp;</p>
+		<p>
+		<input type="submit" name="Submit" id="Submit" value="Submit">
+		</p>
+	</form>
 </div> 
 
   <!-- LEFT SIDE BAR MENU -->
@@ -89,87 +77,7 @@
 	For Immediate Assistance <br>
 	Please Contact: <br>
 	Raul Veitia 321-274-2422 <br>
-  </p>  
-
-  <script>
-	function submitProjectDetails() {
-	    var TenantName = document.getElementById("TName");
-	    var Address = document.getElementById("Address");
-	    var sDate = document.getElementById("SDate");
-	    var eDate = document.getElementById("EDate");
-	    var Prior = document.querySelector('input[name="priority"]');
-	    var Empty = document.querySelector('input[name="empty"]');
-	    var Description = document.getElementById("description");
-	 	// project name validation
-	    if (TenantName.value == "") {
-	        alert("Project name field cannot be empty");
-	    } else {
-	        alert(TenantName.value);
-	    }
-	    // Assigned to validation
-	    var person = pAssigned.options[pAssigned.selectedIndex].value;
-	    if (person == "" || person=="Select") {
-	        alert("Project Assigned to field cannot be empty");
-	    } else {
-	        alert(pAssigned.options[pAssigned.selectedIndex].value);
-	    }
-	    // Date validation
-	    // start date
-	    if (sDate.value == "") {
-	        alert(" Please Enter the Starting date");
-	    } else {
-	        alert(document.getElementById("SDate").value);
-	    }
-	    // End date
-	    if (eDate.value == 0) {
-	        alert("Please enter the end date ");
-	    } else {
-	        alert(document.getElementById("EDate").value);
-	    }
-	   //priority validation
-	    var Prior = document.querySelector('input[name="priority"]:checked');
-
-	    if (Prior != null) {
-	        alert("The priority of project is:" + Prior.value);
-
-	    } else {
-	        alert("You did not select the priority of the project");
-	    }
-
-	    //empty validation
-	    var Empty = document.querySelector('input[name="empty"]:checked');
-
-	    if (Empty != null) {
-	        alert("Empty apartment selection is:" + Empty.value);
-
-	    } else {
-	        alert("You did not select the empty apartment selection");
-	    }
-
-	    // description validation
-
-	    if (Description.value == "") {
-	        alert("You did not write the project description");
-	    } else {
-	        alert(document.getElementById("description").value);
-	    }
-	}
-	function resetProjectDetails() {
-	     document.getElementById("TName").value = '';
-	     document.getElementById("Address").value = '';
-	     document.getElementById("SDate").value = '';
-	     document.getElementById("EDate").value = '';
-	     document.getElementById("description").value = '';
-	     document.querySelector('input[name="empty"]').value = "";
-	     document.querySelector('input[name="priority"]').value = "";
-
-	     document.getElementById("highPrio").checked = false;
-	     document.getElementById("avePrio").checked = false;
-	     document.getElementById("lowPrio").checked = false;
-	     document.getElementById("yesEmpty").checked = false;
-	     document.getElementById("noEmpty").checked = false;
-	}
-  </script>
+  </p>
 
 </body>
 <footer id="footer">Maybelle Hernandez 2022 &copy; Copyright</footer>
