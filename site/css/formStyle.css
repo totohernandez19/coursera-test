@@ -1,0 +1,130 @@
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+textarea {
+    padding: 2px;
+    line-height: 1;
+    border-radius: 5px;
+    box-sizing: border-box;
+} 
+select {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 8px 0;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+input[type=date] {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 8px 0;
+    padding: 8px 5px;
+    border-radius: 5px;
+}
+input[type=text] {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+#SDate, #EDate{
+    width: 50%;
+}
+table {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 100;
+    display: block;
+    padding: 10px;
+    width: 720px;
+    height: 470px;
+    position: absolute;
+    left: 325px;
+    top : 130px;
+    text-align: left;
+    overflow: scroll;
+}
+h2 {
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+.reset1 {
+    width: 30%;
+    background-color: #547ef3;
+    color: white;
+    padding: 12px 8px;
+    margin-right: 50px;
+    margin-left: -50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: auto;
+}
+.reset2:hover{
+    background-color: #584ca0;
+}
+button[type=submit] {
+    width: 65%;
+    padding: 12px 8px;
+    margin-left: 80px;
+    margin-top: auto;
+    /* margin-bottom: 20px; */
+    margin-right: -20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #33d439;
+    color: white;
+    font-size: 15px;
+}
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+.row1{
+    visibility: hidden;
+    display: none;
+}
+.reset2{
+    visibility: hidden;
+    display: none;
+}
+
+/* DIALOG BOX */
+#confirm {
+         display: none;
+         background-color: #F3F5F6;
+         color: #000000;
+         border: 1px solid #aaa;
+         position: fixed;
+         width: 300px;
+         height: 100px;
+         left: 50%;
+         margin-left: -100px;
+         padding: 10px 20px 10px;
+         box-sizing: border-box;
+         text-align: center;
+      }
+      #confirm button {
+         background-color: #FFFFFF;
+         display: inline-block;
+         border-radius: 12px;
+         border: 4px solid #aaa;
+         padding: 5px;
+         text-align: center;
+         width: 60px;
+         cursor: pointer;
+      }
+      #confirm .message {
+         text-align: left;
+      }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML / CSS CLASS</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <!-- LEFT SIDE BAR MENU -->
+  <nav id="left_panel">
+  	<ul class="left_panel_text"> OUR ADVENTURES
+  		<li> --------------------- </li>
+  		<li><a href="index.html"> HOME </a></li>
+  		<li><a href="jakarta.html"> JAKARTA </a></li>
+  		<li><a href="yogya.html"> YOGYAKARTA </a></li>
+  		<li><a href="negros.html"> NEGROS </a></li>
+  		<li><a href="cebu.html"> CEBU </a></li>
+  		<li><br></li>
+  		<li><br></li>
+  		<li><br></li>
+  		<li> TITO'S JOB </li>
+  		<li> --------------------- </li>
+  		<li><a href="https://www.belmontmanagementgroup.com/" target="_blank"> BELMONT </a></li>
+  		<li><a href="joborder.html"> JOB ORDER </a></li>
+  	</ul>
+  </nav>
+
+  <!-- TOP CENTER -->
+  <p id="topcenter_panel">
+    <h1 class="topcenter_h1"> BALI </h1>
+  </p>
+
+  <!-- MAIN CENTER PANEL -->
+  <p id="center_panel">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 10</div>
+		  <img src="pics/bali/bali_1.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 10</div>
+		  <img src="pics/bali/bali_2.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 10</div>
+		  <img src="pics/bali/bali_3.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 10</div>
+		  <img src="pics/bali/bali_4.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 10</div>
+		  <img src="pics/bali/bali_5.jpg">
+		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext">6 / 10</div>
+		  <img src="pics/bali/bali_6.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">7 / 10</div>
+		  <img src="pics/bali/bali_7.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">8 / 10</div>
+		  <img src="pics/bali/bali_8.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">9 / 10</div>
+		  <img src="pics/bali/bali_9.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">10 / 10</div>
+		  <img src="pics/bali/bali_10.jpg">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+	</div>
+	<br>	
+  </p>
+
+  <!-- LEFT SIDE BAR MENU -->
+  <p id="right_panel" class="right_panel_text">
+  	BALI
+  	<br><br>
+  	Bali is our paradise, our favorite place, the most memorable place for us since this is where we first met, me and my husband. The first time we saw each other was magical, I know magical is over the top word to describe it. Well, the first meeting was great, we had expectations from each other thats too less or too high or just enough, but the bottomline is, we really got along just fine. It felt like we've known each other in person for a very long time. There's a little bit of awkwardness but after a few minutes of talking everything just fell into place. There were a lot of things that we both like, we both have strong personalities, there were minor adjustments and few arguments but talk about it and make-up at the end of the day.
+  	<br><br>
+    We have explored Bali like locals. We rode a motorbike to go to places that are not usually in a group tour itineraries. It was totally cool since we can go to any places all by ourselves, we spent as much time as we could in every places that we visit, not in a hurry. We ate whatever we like during this vacation.
+    <br><br>
+    We promised that after 10 years we will definitely go back to Bali.
+  </p>  
+
+
+  <script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		}
+  </script>
+
+</body>
+
+<footer id="footer">Maybelle Hernandez 2022 &copy; Copyright</footer>
+
+</html>
