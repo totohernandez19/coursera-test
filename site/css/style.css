@@ -51,74 +51,78 @@ ul{
 #left_panel{
   background: #FCFBFA; 
   width: 20%;
-  height: 90%; 
+  height: 98%; 
   border: 3px solid #DDDAD7;
   position: absolute;
-  left: 15px;
-  top : 15px; 
+  left: 0px;
+  top : 0px; 
+  margin: 5px;
 }
 
 #topcenter_panel{
   background: #FCFBFA;
-  width: 55%;
-  height: 15%;
+  width: 59%;
+  height: 10%;
   border: 3px solid #DDDAD7;
   position: absolute;
-  left: 310px;
+  left: 275px;
   top : 0px;
+  margin: 5px;
 }
 
 #center_panel{
   background: #FCFBFA;
-  width: 55%;
-  height: 73%;
+  width: 59%;
+  height: 83.3%;
   border: 3px solid #DDDAD7;
   position: absolute;
-  left: 310px;
-  top : 110px;
+  left: 275px;
+  top : 65px;
+  margin: 5px;
 }
+
+#footer{
+  background: #FCFBFA;
+  width: 59%;
+  height: 4%;
+  border: 3px solid #DDDAD7;
+  position: absolute;
+  left: 275px;
+  bottom: 2px;
+  margin: 5px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-variant-caps: all-petite-caps;
+} 
 
 #right_panel{
   overflow: auto;
   background: #FCFBFA;
   width: 20%;
-  height: 90%;
+  height: 98%; 
   border: 3px solid #DDDAD7;
   position: absolute;
-  right: 10px;
+  right: 0px;
   top : 0px; 
+  margin: 5px;
 } 
 
 .topcenter_h1{
   text-align: center;
   width: 60%;
-  height: 20%;
+  height: 10%;
   position: absolute;
   left: 310px;
-  top : 20px;
-}
-
-#footer{
-  background: #FCFBFA;
-  width: 98%;
-  height: 4%;
-  border: 3px solid #DDDAD7;
-  position: absolute;
-  right: 15px;
-  left: 15px;
-  bottom: 15px;
-  text-align: center;
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-variant-caps: all-petite-caps;
+  top : 0px;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  width: 55%;
-  height: 73%;
+  width: 58%;
+  height: 80%;
   position: absolute;
-  left: 310px;
-  top : 125px;
+  left: 285px;
+  top : 80px;
 }
 
 /* Next & previous buttons */
